@@ -1,0 +1,35 @@
+{
+  "$comment": "Reference schema for one entry in data/recipes.json. Not machine-validated — used as a template/reminder when writing new recipes.",
+  "id": "kebab-case-unique-id",
+  "name": "Human-readable recipe name — succinct, no appliance/size/parenthetical annotations (e.g. no '(5L Ninja Foodi)' or '(6L)'); if the dish is a recognisable regional style (Indian, Thai, Mexican, etc.), name that cuisine in the title",
+  "source": "Short provenance note, e.g. 'Generated with Claude — Ninja Foodi example recipe'",
+  "base_servings": "number — how many servings the base_qty amounts below are written for",
+  "cook_method": "e.g. 'Ninja Foodi — Sear/Sauté then Pressure Cook'",
+  "prep_time_min": "number",
+  "cook_time_min": "number",
+  "max_fill_volume_l": 6,
+  "estimated_volume_l": "number — estimated total pot volume at base_servings; keep <= 4 for legumes/rice/grains under pressure, <= 3 for very foamy foods, always < 6",
+  "macros_per_serve": {
+    "calories": "number, kcal per serve",
+    "protein_g": "number, grams per serve",
+    "carbs_g": "number, grams per serve",
+    "fat_g": "number, grams per serve",
+    "protein_pct": "number, % of calories from protein (target ~40)",
+    "carbs_pct": "number, % of calories from carbs (target ~40)",
+    "fat_pct": "number, % of calories from fat (target ~20)"
+  },
+  "tags": ["free-form strings, e.g. 'beans', 'lentils', 'high-protein', 'meal-prep', 'ninja-foodi'"],
+  "ingredients": [
+    {
+      "name": "ingredient description as it should read in a recipe/ingredient list",
+      "base_qty": "plain number at base_servings, e.g. 800 or 2 or 0.5 (no fractions/ranges)",
+      "unit": "e.g. 'g', 'ml', 'tbsp', 'tsp', 'clove', 'unit', 'g can', 'bunch'",
+      "category": "one of the Australian grocery aisle categories in references/coles_aisles.md",
+      "product": "a specific, realistic product name/size you'd find at an Australian grocer like Coles (sourcing reference: references/coles_aisles.md) — but don't brand it as 'Coles X'; use the plain product name for store-brand items (e.g. 'Brown Onions', not 'Coles Brown Onions') and real third-party brand names where genuinely a branded product (e.g. 'SunRice Basmati Rice 1kg', 'Massel Salt Reduced Chicken Style Liquid Stock 1L') — the site/shopping list never mentions Coles by name",
+      "discrete": "optional boolean — true for items bought as whole units (cans, onions, garlic bulbs, limes, bunches) so shopping-list scaling rounds up instead of scaling fractionally"
+    }
+  ],
+  "method": [
+    "Ordered array of Ninja Foodi steps as strings, naming the actual function used (Sear/Sauté, Pressure Cook, Air Fry Crisp, Slow Cook, Steam). Fold any need-to-know technique detail (e.g. 'don't boil hard once the yoghurt is in, or it may split') directly into the relevant step rather than a separate notes field — recipe pages show only ingredients and method, no extra commentary."
+  ]
+}
