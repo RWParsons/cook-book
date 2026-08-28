@@ -88,7 +88,7 @@
     align-items: start;
   }
   @media (max-width: 900px) {
-    .layout { grid-template-columns: 1fr; }
+    .layout { grid-template-columns: minmax(0, 1fr); }
   }
   nav.recipe-list {
     background: var(--panel);
@@ -128,8 +128,42 @@
     margin-top: 2px;
   }
 
+  @media (max-width: 900px) {
+    /* On a single-column layout, sticky rails just float awkwardly over
+       content instead of sitting beside it — pin them to normal flow. */
+    nav.recipe-list, aside.shopping-list { position: static; max-height: none; }
+
+    /* Turn the recipe picker into a horizontally-scrolling pill strip so it
+       doesn't push the actual recipe below a full screen of button text. */
+    nav.recipe-list { padding: 8px; }
+    nav.recipe-list h2 { margin: 2px 4px 6px; }
+    nav.recipe-list .pill-row {
+      display: flex;
+      gap: 6px;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      padding-bottom: 2px;
+    }
+    nav.recipe-list button {
+      display: block;
+      width: auto;
+      flex: 0 0 auto;
+      white-space: nowrap;
+      padding: 9px 14px;
+      margin-bottom: 0;
+      border: 1px solid var(--line);
+    }
+    nav.recipe-list button .tags { display: none; }
+  }
+
   main.recipe { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 22px 26px; min-width: 0; }
   main.recipe h2 { margin: 0 0 4px; font-size: 1.5rem; }
+  @media (max-width: 600px) {
+    .wrap { padding: 16px 12px 60px; }
+    header.site-header h1 { font-size: 1.4rem; }
+    main.recipe { padding: 16px 14px; }
+    main.recipe h2 { font-size: 1.25rem; }
+  }
   .meta-row { color: var(--muted); font-size: 0.88rem; margin-bottom: 14px; }
   .meta-row span:not(:last-child)::after { content: "·"; margin: 0 8px; }
 
@@ -155,6 +189,10 @@
     border: 1px solid var(--line); background: var(--panel); color: var(--ink); font-family: inherit;
   }
   .serves-control .factor { font-size: 0.8rem; color: var(--muted); }
+  @media (max-width: 600px) {
+    .serves-control button { width: 40px; height: 40px; font-size: 1.3rem; }
+    .serves-control input[type=number] { width: 64px; font-size: 1.05rem; padding: 8px; }
+  }
 
   .volume-note {
     font-size: 0.85rem;
@@ -179,10 +217,14 @@
     display: flex; justify-content: space-between; gap: 12px;
     padding: 7px 0; border-bottom: 1px dashed var(--line); font-size: 0.95rem;
   }
-  ul.ingredients li .qty { color: var(--accent); font-variant-numeric: tabular-nums; white-space: nowrap; }
+  ul.ingredients li span:first-child { min-width: 0; overflow-wrap: break-word; }
+  ul.ingredients li .qty { color: var(--accent); font-variant-numeric: tabular-nums; white-space: nowrap; flex: 0 0 auto; }
   ul.ingredients li button.add-one {
     margin-left: 8px; border: 1px solid var(--line); background: var(--bg); color: var(--ink);
     border-radius: 6px; font-size: 0.72rem; padding: 2px 7px; cursor: pointer; font-family: inherit;
+  }
+  @media (max-width: 480px) {
+    ul.ingredients li { flex-wrap: wrap; }
   }
 
   ol.method { padding-left: 1.3em; }
@@ -1390,6 +1432,8 @@
   function renderNav() {
     const nav = document.getElementById("recipe-list");
     nav.innerHTML = "<h2>Recipes</h2>";
+    const row = document.createElement("div");
+    row.className = "pill-row";
     RECIPES.forEach(r => {
       const btn = document.createElement("button");
       btn.className = r.id === currentId ? "active" : "";
@@ -1399,8 +1443,9 @@
         renderNav();
         renderRecipe();
       });
-      nav.appendChild(btn);
+      row.appendChild(btn);
     });
+    nav.appendChild(row);
   }
 
   function volumeNote(recipe, factor) {
