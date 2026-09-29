@@ -1,58 +1,5 @@
 [
   {
-    "id": "chicken-lentil-chickpea-curry",
-    "name": "Indian Chicken, Lentil & Chickpea Curry",
-    "source": "Generated with Claude — Ninja Foodi example recipe",
-    "base_servings": 6,
-    "cook_method": "Ninja Foodi — Sear/Sauté then Pressure Cook",
-    "prep_time_min": 15,
-    "cook_time_min": 20,
-    "max_fill_volume_l": 6,
-    "estimated_volume_l": 2.6,
-    "macros_per_serve": {
-      "calories": 588,
-      "protein_g": 50,
-      "carbs_g": 56,
-      "fat_g": 18,
-      "protein_pct": 34,
-      "carbs_pct": 38,
-      "fat_pct": 28
-    },
-    "tags": ["beans", "lentils", "high-protein", "meal-prep", "curry", "ninja-foodi", "indian", "collagen-boosted"],
-    "ingredients": [
-      { "name": "chicken thigh fillets, diced, trimmed of visible fat", "base_qty": 800, "unit": "g", "category": "Meat & Seafood", "product": "RSPCA Approved Chicken Thigh Fillets" },
-      { "name": "red lentils, dried, rinsed", "base_qty": 200, "unit": "g", "category": "Pantry", "product": "Red Lentils 500g" },
-      { "name": "chickpeas, rinsed & drained", "base_qty": 400, "unit": "g can", "category": "Pantry", "product": "Chick Peas 400g", "discrete": true },
-      { "name": "basmati rice, uncooked", "base_qty": 150, "unit": "g", "category": "Pantry", "product": "SunRice Basmati Rice 1kg" },
-      { "name": "brown onion, diced", "base_qty": 1, "unit": "unit", "category": "Fruit & Veg", "product": "Brown Onions", "discrete": true },
-      { "name": "crushed garlic, from a jar", "base_qty": 1, "unit": "tbsp", "category": "Pantry", "product": "Crushed Garlic 220g" },
-      { "name": "crushed ginger, from a jar", "base_qty": 1, "unit": "tbsp", "category": "Pantry", "product": "Crushed Ginger 220g" },
-      { "name": "curry powder", "base_qty": 2, "unit": "tbsp", "category": "Pantry", "product": "Keen's Curry Powder 100g" },
-      { "name": "ground turmeric", "base_qty": 1, "unit": "tsp", "category": "Pantry", "product": "Ground Turmeric" },
-      { "name": "ground cumin", "base_qty": 1, "unit": "tsp", "category": "Pantry", "product": "Ground Cumin" },
-      { "name": "curry paste", "base_qty": 2, "unit": "tbsp", "category": "Pantry", "product": "Patak's Rogan Josh Curry Paste 283g" },
-      { "name": "crushed tomatoes", "base_qty": 400, "unit": "g can", "category": "Pantry", "product": "Crushed Tomatoes 400g", "discrete": true },
-      { "name": "light coconut milk", "base_qty": 80, "unit": "ml", "category": "Pantry", "product": "Ayam Coconut Milk Light 270ml" },
-      { "name": "salt-reduced chicken stock", "base_qty": 500, "unit": "ml", "category": "Pantry", "product": "Massel Salt Reduced Chicken Style Liquid Stock 1L" },
-      { "name": "olive oil", "base_qty": 1, "unit": "tsp", "category": "Pantry", "product": "Extra Virgin Olive Oil 500mL" },
-      { "name": "unflavoured collagen protein powder", "base_qty": 60, "unit": "g", "category": "Health Foods", "product": "Bare Blends Beef Collagen Peptides 300g" },
-      { "name": "baby spinach leaves", "base_qty": 100, "unit": "g", "category": "Fruit & Veg", "product": "Baby Spinach 120g" },
-      { "name": "fresh coriander, to serve", "base_qty": 1, "unit": "bunch", "category": "Fruit & Veg", "product": "Coriander Bunch", "discrete": true },
-      { "name": "lime, cut into wedges", "base_qty": 1, "unit": "unit", "category": "Fruit & Veg", "product": "Limes", "discrete": true }
-    ],
-    "method": [
-      "Set the Ninja Foodi to Sear/Sauté on medium-high. Add the olive oil and onion, and cook for 3–4 minutes until softened.",
-      "Add the garlic, ginger, curry powder, turmeric, cumin and curry paste. Stir for 1 minute until fragrant.",
-      "Add the diced chicken thigh and sear for 3–4 minutes, stirring, until no longer pink on the outside.",
-      "Add the crushed tomatoes, chicken stock, red lentils and drained chickpeas. Stir well, scraping any bits from the base of the pot.",
-      "Cancel Sear/Sauté. Fit the pressure lid, set the valve to Seal, and Pressure Cook on High for 8 minutes.",
-      "While the curry cooks, prepare the basmati rice separately (rice cooker or stovetop absorption method).",
-      "Once cooking finishes, quick release the pressure. Stir in the coconut milk and baby spinach, and let sit for 2–3 minutes until the spinach wilts and the sauce thickens slightly.",
-      "Off the heat, whisk in the collagen protein powder until fully dissolved — it's unflavoured and heat-stable, so it disappears into the sauce.",
-      "Season to taste and serve over rice, topped with coriander and a squeeze of lime."
-    ]
-  },
-  {
     "id": "chicken-lentil-bean-curry-5l",
     "name": "Indian High-Protein Chicken, Lentil & Bean Curry",
     "source": "Rex's recipe, developed with Claude",
@@ -81,7 +28,7 @@
       { "name": "carrots, chopped", "base_qty": 300, "unit": "g", "category": "Fruit & Veg", "product": "Carrots 1kg" },
       { "name": "potatoes, diced", "base_qty": 400, "unit": "g", "category": "Fruit & Veg", "product": "Brushed Potatoes" },
       { "name": "cherry tomatoes, halved", "base_qty": 1, "unit": "x 250g punnet", "category": "Fruit & Veg", "product": "Cherry Tomatoes 250g", "discrete": true },
-      { "name": "baby spinach", "base_qty": 50, "unit": "g", "category": "Fruit & Veg", "product": "Baby Spinach 120g" },
+      { "name": "baby spinach", "base_qty": 120, "unit": "g", "category": "Fruit & Veg", "product": "Baby Spinach 120g", "discrete": true },
       { "name": "low-fat Greek yoghurt", "base_qty": 200, "unit": "g", "category": "Dairy, Eggs & Fridge", "product": "Greek Style Yoghurt 99% Fat Free 500g" },
       { "name": "onion, diced", "base_qty": 150, "unit": "g", "category": "Fruit & Veg", "product": "Brown Onions" },
       { "name": "neutral oil or ghee", "base_qty": 1, "unit": "tbsp", "category": "Pantry", "product": "Ghee 375g" },
@@ -373,6 +320,55 @@
       "Stir-fry the hard veg: Heat a wok or heavy frying pan over the highest heat until it just starts to smoke. Add the neutral oil and swirl, then the garlic for 15 seconds, no longer. Add the green beans and the thick stems of the gai lan, tossing for about 90 seconds.",
       "Finish the greens: Add the capsicum and the leafy tops of the gai lan, then pour the sauce down the side of the pan. It should hiss hard. Toss for 2 minutes until the stems are bright green and still snap, then tip straight onto a platter so it stops cooking.",
       "Finish and serve: Stir the lime juice through the curry. Taste: it should land sweet, salty and sour all at once. Serve over rice with the greens and lime wedges for squeezing."
+    ]
+  },
+  {
+    "id": "smoky-pulled-chicken-lentil-bowls",
+    "name": "Smoky BBQ Pulled Chicken & Lentil Bowls",
+    "source": "Rex's recipe, developed with Claude",
+    "base_servings": 6,
+    "cook_method": "Ninja Foodi — Sear/Sauté then Pressure Cook, finished with Sear/Sauté",
+    "prep_time_min": 15,
+    "cook_time_min": 35,
+    "max_fill_volume_l": 6,
+    "estimated_volume_l": 1.9,
+    "macros_per_serve": {
+      "calories": 498,
+      "protein_g": 47,
+      "carbs_g": 54,
+      "fat_g": 10,
+      "protein_pct": 38,
+      "carbs_pct": 44,
+      "fat_pct": 18
+    },
+    "tags": ["lentils", "high-protein", "meal-prep", "ninja-foodi", "freezer-friendly", "bbq"],
+    "ingredients": [
+      { "name": "chicken breast fillets, trimmed", "base_qty": 900, "unit": "g", "category": "Meat & Seafood", "product": "RSPCA Approved Chicken Breast Fillets" },
+      { "name": "red lentils, dried, rinsed", "base_qty": 150, "unit": "g", "category": "Pantry", "product": "Red Lentils 500g" },
+      { "name": "crushed tomatoes", "base_qty": 400, "unit": "g can", "category": "Pantry", "product": "Crushed Tomatoes 400g", "discrete": true },
+      { "name": "tomato paste", "base_qty": 2, "unit": "tbsp", "category": "Pantry", "product": "Tomato Paste 375g" },
+      { "name": "salt-reduced chicken stock", "base_qty": 300, "unit": "ml", "category": "Pantry", "product": "Massel Salt Reduced Chicken Style Liquid Stock 1L" },
+      { "name": "sriracha", "base_qty": 1.5, "unit": "tbsp", "category": "Pantry", "product": "Huy Fong Sriracha Hot Chili Sauce 481g" },
+      { "name": "smoked paprika", "base_qty": 2, "unit": "tbsp", "category": "Pantry", "product": "Smoked Paprika" },
+      { "name": "ground cumin", "base_qty": 1, "unit": "tbsp", "category": "Pantry", "product": "Ground Cumin" },
+      { "name": "garlic powder", "base_qty": 1, "unit": "tbsp", "category": "Pantry", "product": "Garlic Powder" },
+      { "name": "onion powder", "base_qty": 1, "unit": "tbsp", "category": "Pantry", "product": "Onion Powder" },
+      { "name": "brown sugar", "base_qty": 1, "unit": "tbsp", "category": "Pantry", "product": "Brown Sugar 1kg" },
+      { "name": "apple cider vinegar", "base_qty": 2, "unit": "tbsp", "category": "Pantry", "product": "Apple Cider Vinegar 500mL" },
+      { "name": "Worcestershire sauce", "base_qty": 1, "unit": "tbsp", "category": "Pantry", "product": "Worcestershire Sauce 250mL" },
+      { "name": "salt", "base_qty": 1, "unit": "tsp", "category": "Pantry", "product": "Cooking Salt" },
+      { "name": "neutral oil, for searing and finishing", "base_qty": 3, "unit": "tbsp", "category": "Pantry", "product": "Rice Bran Oil 750mL" },
+      { "name": "basmati rice, uncooked, cooked separately", "base_qty": 160, "unit": "g", "category": "Pantry", "product": "SunRice Basmati Rice 1kg" },
+      { "name": "frozen mixed vegetables, steamed separately", "base_qty": 600, "unit": "g", "category": "Freezer", "product": "Frozen Mixed Vegetables 1kg" }
+    ],
+    "method": [
+      "Bloom the spices: Set the Ninja Foodi to Sear/Sauté on Medium. Heat half the oil, then add the smoked paprika, cumin, garlic powder and onion powder. Stir 30 seconds until fragrant — watch closely so the spices don't catch.",
+      "Build the sauce: Stir in the crushed tomatoes, tomato paste, chicken stock, sriracha, brown sugar, apple cider vinegar, Worcestershire sauce and salt. Stir in the red lentils, then nestle the whole chicken breasts down into the sauce.",
+      "Pressure cook: Cancel Sear/Sauté. Lock the lid, set the valve to Seal, and Pressure Cook on High for 10 minutes, then quick release.",
+      "Shred the chicken: Lift the chicken breasts out onto a board and shred with two forks — it should pull apart easily. The lentils should have mostly broken down into the sauce.",
+      "Reduce and finish: Return the shredded chicken to the pot. Switch to Sear/Sauté on Medium and simmer, uncovered, 5–8 minutes, stirring, until the sauce is thick and clings to the chicken rather than pooling. Stir through the remaining oil off the heat.",
+      "While the chicken cooks, prepare the rice separately (rice cooker or stovetop absorption method) and steam or microwave the frozen vegetables according to the packet.",
+      "Assemble the containers: Divide the rice and vegetables between meal-prep containers, top with the saucy pulled chicken, and spoon any extra sauce from the pot over the top."
     ]
   }
 ]
